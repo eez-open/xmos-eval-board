@@ -35,7 +35,7 @@ Evaluation board features:
 - Low-power audio amplifier
 - Reset switch
 
-For MCU pin mapping check _[Portmap for EEZ evaluation board](XE216-512-TQ128 portmap for EEZ evaluation board r1B4.pdf)_
+For MCU pin mapping check _[Portmap for EEZ evaluation board](XE216-512-TQ128_portmap_for_EEZ_evaluation_board_r1B4.pdf)_
 
 
 
