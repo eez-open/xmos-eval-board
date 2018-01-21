@@ -26,13 +26,14 @@ Evaluation board features:
 - QSPI Flash memory
 - 10-pin IDC connector for direct access to Flash memory
 - 16-bit I/O port expander with 2 opto-isolated input, 2 opto-isolated outputs, 3 on-board LEDs, 3 TVS protected inputs
-- Real time clock (SPI) with supercap backup (Vbat)
+- Real time clock (SPI) with supercap backup (V_bat_)
 - EEPROM (SPI)
-- SDRAM
-- 20-pin FFC 0.5 mm socket for Riverdi LCD TFT displays
-- Micro SD Card socket
+- SDRAM (multiplexed address and data bus)
+- 20-pin FFC 0.5 mm socket for Riverdi LCD TFT displays (SPI, Audio out)
+- Micro SD Card socket (SPI)
 - 10/100 Mbit Ethernet PHY with RJ-45 socket
 - Low-power audio amplifier
+- 10-pin header for cheap W5500 Ethernet module (SPI)
 - Reset switch
 
 For MCU pin mapping check _[Portmap for EEZ evaluation board](XE216-512-TQ128_portmap_for_EEZ_evaluation_board_r1B4.pdf)_

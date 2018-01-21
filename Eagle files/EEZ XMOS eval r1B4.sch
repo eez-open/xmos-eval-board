@@ -19707,12 +19707,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="X3" gate="-3" x="243.84" y="55.88" smashed="yes" rot="MR0">
 <attribute name="NAME" x="250.19" y="56.769" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X3" gate="-5" x="243.84" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="250.19" y="49.911" size="1.778" layer="95"/>
-</instance>
-<instance part="X3" gate="-2" x="243.84" y="58.42" smashed="yes" rot="MR0">
-<attribute name="NAME" x="250.19" y="59.309" size="1.778" layer="95" rot="MR180"/>
-</instance>
 <instance part="X3" gate="-1" x="243.84" y="60.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="250.19" y="60.071" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.49" y="40.513" size="1.778" layer="96" rot="MR180"/>
@@ -19737,6 +19731,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="250.19" y="47.371" size="1.778" layer="95"/>
 </instance>
 <instance part="X3" gate="-8" x="243.84" y="43.18" rot="R180"/>
+<instance part="X3" gate="-5" x="243.84" y="50.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="250.19" y="49.911" size="1.778" layer="95"/>
+</instance>
+<instance part="X3" gate="-2" x="243.84" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="250.19" y="57.531" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 <bus name="SD_ADQ[0..15]">
@@ -20526,9 +20526,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="111.76" y="69.215" size="1.27" layer="102"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="1"/>
-<wire x1="243.84" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
-<label x="226.06" y="59.055" size="1.27" layer="102"/>
+<wire x1="243.84" y1="50.8" x2="226.06" y2="50.8" width="0.1524" layer="91"/>
+<label x="226.06" y="51.435" size="1.27" layer="102"/>
+<pinref part="X3" gate="-5" pin="1"/>
 </segment>
 </net>
 <net name="X0D06/QS_D2" class="0">
@@ -20637,9 +20637,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="LATCH_IN" class="0">
 <segment>
-<pinref part="X3" gate="-5" pin="1"/>
-<wire x1="243.84" y1="50.8" x2="226.06" y2="50.8" width="0.1524" layer="91"/>
-<label x="226.06" y="51.435" size="1.27" layer="102"/>
+<wire x1="243.84" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
+<label x="226.06" y="59.055" size="1.27" layer="102"/>
+<pinref part="X3" gate="-2" pin="1"/>
 </segment>
 <segment>
 <pinref part="IC11" gate="G$1" pin="3A"/>
@@ -20874,12 +20874,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="230.505" y="46.228" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="236.855" y="46.228" size="1.778" layer="96"/>
 </instance>
-<instance part="R26" gate="G$1" x="50.8" y="53.34" smashed="yes" rot="R270">
-<attribute name="NAME" x="52.07" y="55.6514" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="52.07" y="53.467" size="1.778" layer="96" rot="MR180"/>
+<instance part="R26" gate="G$1" x="53.34" y="53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="54.61" y="55.6514" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="54.61" y="53.467" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="+3V2" gate="G$1" x="50.8" y="60.96" smashed="yes">
-<attribute name="VALUE" x="53.975" y="61.595" size="1.778" layer="96" rot="MR0"/>
+<instance part="+3V2" gate="G$1" x="53.34" y="60.96" smashed="yes">
+<attribute name="VALUE" x="56.515" y="61.595" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="IC21" gate="A" x="43.18" y="48.26" smashed="yes" rot="MR0">
 <attribute name="NAME" x="36.195" y="50.8" size="1.778" layer="95"/>
@@ -21035,13 +21035,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="SUPPLY93" gate="GND" x="68.58" y="50.8" smashed="yes">
 <attribute name="VALUE" x="66.421" y="46.99" size="1.778" layer="96"/>
 </instance>
-<instance part="R29" gate="G$1" x="43.18" y="35.56" smashed="yes">
-<attribute name="NAME" x="40.64" y="36.068" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="46.355" y="36.068" size="1.778" layer="96"/>
+<instance part="R29" gate="G$1" x="45.72" y="35.56" smashed="yes">
+<attribute name="NAME" x="43.18" y="36.068" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="48.895" y="36.068" size="1.778" layer="96"/>
 </instance>
-<instance part="R30" gate="G$1" x="43.18" y="33.02" smashed="yes">
-<attribute name="NAME" x="40.64" y="30.0736" size="1.778" layer="95"/>
-<attribute name="VALUE" x="46.355" y="33.528" size="1.778" layer="96"/>
+<instance part="R30" gate="G$1" x="45.72" y="33.02" smashed="yes">
+<attribute name="NAME" x="43.18" y="33.2486" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="48.895" y="33.528" size="1.778" layer="96"/>
 </instance>
 <instance part="X4" gate="-4" x="254" y="76.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="256.54" y="76.581" size="1.4224" layer="95"/>
@@ -21841,7 +21841,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="X5" gate="1" pin="7"/>
 <label x="53.34" y="36.195" size="1.27" layer="102"/>
 <wire x1="68.58" y1="35.56" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="35.56" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC19" gate="G$1" pin="IO2"/>
 <wire x1="68.58" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="78.74" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
@@ -21859,7 +21859,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="66.04" y1="73.66" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 <junction x="66.04" y="33.02"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TDO" class="0">
@@ -21976,11 +21976,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="TRST_N" class="0">
 <segment>
 <pinref part="X5" gate="1" pin="15"/>
-<wire x1="68.58" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="25.4" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="25.4" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
-<junction x="50.8" y="48.26"/>
+<wire x1="53.34" y1="48.26" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<junction x="53.34" y="48.26"/>
 <pinref part="IC21" gate="A" pin="A"/>
 <label x="53.34" y="26.035" size="1.27" layer="102"/>
 </segment>
@@ -22241,13 +22241,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="30.48" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="30.48" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$52" class="0">
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
 <pinref part="IC18" gate="-SYSTEM" pin="TCK"/>
-<wire x1="38.1" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -24596,31 +24597,113 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <approved hash="202,1,60.96,35.56,IC7,M2,,,,"/>
 <approved hash="104,1,53.34,157.48,IC1,SW,SW_WLED,,,"/>
 <approved hash="104,1,78.74,157.48,IC1,VIN,N$30,,,"/>
-<approved hash="104,1,195.58,154.94,X1,1,GND,,,"/>
-<approved hash="104,1,200.66,154.94,X1,3,GND,,,"/>
+<approved hash="104,1,187.96,157.48,X1,1,GND,,,"/>
+<approved hash="104,1,200.66,165.1,X1,2,N$15,,,"/>
+<approved hash="203,1,193.04,157.48,X1,3,,,,"/>
+<approved hash="104,1,233.68,53.34,IC6,VDD,+3V3,,,"/>
 <approved hash="104,1,35.56,109.22,LCD1,GND-3,GND,,,"/>
 <approved hash="104,1,35.56,114.3,LCD1,VDD,+3V3,,,"/>
 <approved hash="104,1,35.56,106.68,LCD1,GND-29,GND,,,"/>
 <approved hash="104,1,106.68,60.96,IC5,VCC,+3V3,,,"/>
 <approved hash="104,1,106.68,101.6,IC3,VCC,+3V3,,,"/>
-<approved hash="202,3,66.04,71.12,XO1,EN,,,,"/>
-<approved hash="202,4,129.54,43.18,IC22,TCK,,,,"/>
-<approved hash="202,4,129.54,45.72,IC22,TDI,,,,"/>
-<approved hash="202,4,129.54,50.8,IC22,TMS,,,,"/>
-<approved hash="202,4,129.54,53.34,IC22,!TRST,,,,"/>
-<approved hash="202,4,83.82,33.02,IC22,PWR_DOWN/INT,,,,"/>
+<approved hash="104,2,241.3,93.98,IC13,VCC,+3V3,,,"/>
+<approved hash="104,2,15.24,38.1,IC12B,VSS,GND,,,"/>
+<approved hash="104,2,15.24,53.34,IC12B,VDD,+3V3,,,"/>
+<approved hash="104,2,73.66,99.06,IC10,VDD-1,+3V3,,,"/>
+<approved hash="104,2,73.66,111.76,IC10,VDDQ-3,+3V3,,,"/>
+<approved hash="104,2,73.66,78.74,IC10,GNDQ-6,GND,,,"/>
+<approved hash="104,2,73.66,109.22,IC10,VDDQ-9,+3V3,,,"/>
+<approved hash="104,2,73.66,76.2,IC10,GNDQ-12,GND,,,"/>
+<approved hash="104,2,73.66,96.52,IC10,VDD-14,+3V3,,,"/>
+<approved hash="104,2,73.66,93.98,IC10,VDD-27,+3V3,,,"/>
+<approved hash="104,2,73.66,83.82,IC10,GND-54,GND,,,"/>
+<approved hash="104,2,73.66,71.12,IC10,GNDQ-52,GND,,,"/>
+<approved hash="104,2,73.66,104.14,IC10,VDDQ-49,+3V3,,,"/>
+<approved hash="104,2,73.66,73.66,IC10,GNDQ-46,GND,,,"/>
+<approved hash="104,2,73.66,106.68,IC10,VDDQ-43,+3V3,,,"/>
+<approved hash="104,2,73.66,86.36,IC10,GND-28,GND,,,"/>
+<approved hash="104,2,152.4,50.8,IC14,VCC,+3V3,,,"/>
+<approved hash="104,2,152.4,96.52,IC11,VCC,+3V3,,,"/>
+<approved hash="104,2,208.28,149.86,IC8,VDD,+3V3,,,"/>
+<approved hash="104,2,109.22,147.32,IC9B,VSS,GND,,,"/>
+<approved hash="104,2,109.22,162.56,IC9B,VDD,+3V3,,,"/>
+<approved hash="104,3,137.16,35.56,IC18-POWER,VDD-101,+1V0,,,"/>
+<approved hash="104,3,137.16,33.02,IC18-POWER,VDD-102,+1V0,,,"/>
+<approved hash="104,3,137.16,66.04,IC18-POWER,VDD-11,+1V0,,,"/>
+<approved hash="104,3,137.16,30.48,IC18-POWER,VDD-120,+1V0,,,"/>
+<approved hash="104,3,137.16,27.94,IC18-POWER,VDD-126,+1V0,,,"/>
+<approved hash="104,3,137.16,63.5,IC18-POWER,VDD-16,+1V0,,,"/>
+<approved hash="104,3,137.16,60.96,IC18-POWER,VDD-17,+1V0,,,"/>
+<approved hash="104,3,137.16,58.42,IC18-POWER,VDD-24,+1V0,,,"/>
+<approved hash="104,3,137.16,55.88,IC18-POWER,VDD-36,+1V0,,,"/>
+<approved hash="104,3,137.16,53.34,IC18-POWER,VDD-41,+1V0,,,"/>
+<approved hash="104,3,137.16,50.8,IC18-POWER,VDD-56,+1V0,,,"/>
+<approved hash="104,3,137.16,48.26,IC18-POWER,VDD-60,+1V0,,,"/>
+<approved hash="104,3,137.16,45.72,IC18-POWER,VDD-73,+1V0,,,"/>
+<approved hash="104,3,137.16,43.18,IC18-POWER,VDD-80,+1V0,,,"/>
+<approved hash="104,3,137.16,40.64,IC18-POWER,VDD-81,+1V0,,,"/>
+<approved hash="104,3,137.16,38.1,IC18-POWER,VDD-87,+1V0,,,"/>
+<approved hash="104,3,137.16,106.68,IC18-POWER,VDDIOL-6,+3V3,,,"/>
+<approved hash="104,3,137.16,104.14,IC18-POWER,VDDIOL-14,+3V3,,,"/>
+<approved hash="104,3,137.16,101.6,IC18-POWER,VDDIOL-19,+3V3,,,"/>
+<approved hash="104,3,137.16,99.06,IC18-POWER,VDDIOL-29,+3V3,,,"/>
+<approved hash="104,3,137.16,96.52,IC18-POWER,VDDIOL-42,+3V3,,,"/>
+<approved hash="104,3,137.16,91.44,IC18-POWER,VDDIOR-52,+3V3,,,"/>
+<approved hash="104,3,137.16,88.9,IC18-POWER,VDDIOR-67,+3V3,,,"/>
+<approved hash="104,3,137.16,86.36,IC18-POWER,VDDIOR-78,+3V3,,,"/>
+<approved hash="104,3,137.16,83.82,IC18-POWER,VDDIOR-83,+3V3,,,"/>
+<approved hash="104,3,137.16,81.28,IC18-POWER,VDDIOR-92,+3V3,,,"/>
+<approved hash="104,3,137.16,76.2,IC18-POWER,VDDIOT-110,+3V3,,,"/>
+<approved hash="104,3,137.16,73.66,IC18-POWER,VDDIOT-111,+3V3,,,"/>
+<approved hash="104,3,137.16,111.76,IC18-POWER,USB_VDD33,+3V3,,,"/>
+<approved hash="104,3,137.16,12.7,IC18-POWER,VSS,GND,,,"/>
+<approved hash="104,3,137.16,114.3,IC18-POWER,OTP_VCC,+3V3,,,"/>
+<approved hash="104,3,137.16,22.86,IC18-POWER,PLL_AVDD,N$36,,,"/>
+<approved hash="104,3,137.16,20.32,IC18-POWER,PLL_AGND,GND,,,"/>
+<approved hash="104,3,137.16,68.58,IC18-POWER,USB_VDD,+1V0,,,"/>
+<approved hash="104,3,119.38,149.86,IC16,VCC,USB_VBUS,,,"/>
+<approved hash="104,3,45.72,60.96,IC21B,VSS,GND,,,"/>
+<approved hash="104,3,45.72,76.2,IC21B,VDD,+3V3,,,"/>
+<approved hash="104,3,33.02,76.2,XO1,VDD,+3V3,,,"/>
+<approved hash="202,3,33.02,71.12,XO1,EN,,,,"/>
+<approved hash="202,4,129.54,43.18,IC24,TCK,,,,"/>
+<approved hash="202,4,129.54,45.72,IC24,TDI,,,,"/>
+<approved hash="202,4,129.54,50.8,IC24,TMS,,,,"/>
+<approved hash="202,4,129.54,53.34,IC24,!TRST,,,,"/>
+<approved hash="202,4,83.82,33.02,IC24,PWR_DOWN/INT,,,,"/>
+<approved hash="104,4,83.82,27.94,IC24,IOVDD33-32,+3V3,,,"/>
+<approved hash="104,4,83.82,25.4,IC24,IOVDD33-48,+3V3,,,"/>
+<approved hash="104,4,129.54,38.1,IC24,IOGND-35,GND,,,"/>
+<approved hash="104,4,129.54,35.56,IC24,IOGND-47,GND,,,"/>
+<approved hash="104,4,129.54,27.94,IC24,DGND,GND,,,"/>
+<approved hash="104,4,83.82,30.48,IC24,AVDD33,+3V3(A),,,"/>
+<approved hash="104,4,129.54,33.02,IC24,AGND-15,GND,,,"/>
+<approved hash="104,4,129.54,30.48,IC24,AGND-19,GND,,,"/>
+<approved hash="104,4,205.74,162.56,IC23,VDD,+3V3,,,"/>
+<approved hash="104,4,119.38,132.08,IC22B,VSS,GND,,,"/>
+<approved hash="104,4,119.38,147.32,IC22B,VDD,+3V3,,,"/>
+<approved hash="104,5,231.14,144.78,IC27,VDD,N$109,,,"/>
 <approved hash="203,5,182.88,58.42,MOD1,5V0,,,,"/>
-<approved hash="202,4,40.64,114.3,XO2,EN,,,,"/>
+<approved hash="104,5,182.88,55.88,MOD1,3V3,+3V3,,,"/>
+<approved hash="104,5,30.48,48.26,IC28,VDD,+3V3,,,"/>
+<approved hash="104,5,30.48,40.64,IC28,VSS,GND,,,"/>
+<approved hash="104,5,45.72,132.08,IC26,VCC,+3V3,,,"/>
+<approved hash="104,5,109.22,162.56,IC25,VCC,+3V3,,,"/>
+<approved hash="104,4,99.06,127,XO2,VDD,+3V3,,,"/>
+<approved hash="202,4,99.06,121.92,XO2,EN,,,,"/>
+<approved hash="104,5,149.86,154.94,J2,VDD,SPI1_CLK,,,"/>
+<approved hash="104,5,149.86,149.86,J2,VSS,SPI1_MISO,,,"/>
 <approved hash="205,2,208.28,147.32,!RESET,,,,,"/>
-<approved hash="205,3,35.56,50.8,!RESET,,,,,"/>
+<approved hash="205,3,35.56,48.26,!RESET,,,,,"/>
 <approved hash="205,5,200.66,137.16,SPI1_MISO,,,,,"/>
 <approved hash="205,5,78.74,154.94,SPI1_MISO,,,,,"/>
 <approved hash="115,1,131.976,90.066,FRAME6,,,,,"/>
+<approved hash="115,1,45.72,171.378,D1,,,,,"/>
 <approved hash="115,2,131.976,90.066,FRAME1,,,,,"/>
 <approved hash="115,3,131.976,90.066,FRAME3,,,,,"/>
 <approved hash="115,4,131.976,90.066,FRAME4,,,,,"/>
 <approved hash="115,5,131.976,90.066,FRAME2,,,,,"/>
-<approved hash="115,5,190.945,66.0823,MOD1,,,,,"/>
+<approved hash="115,1,247.249,160.02,ZD2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
