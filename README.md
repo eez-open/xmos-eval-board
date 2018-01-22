@@ -26,7 +26,7 @@ Evaluation board features:
 - QSPI Flash memory
 - 10-pin IDC connector for direct access to Flash memory
 - 16-bit I/O port expander with 2 opto-isolated input, 2 opto-isolated outputs, 3 on-board LEDs, 3 TVS protected inputs
-- Real time clock (SPI) with supercap backup (V_bat_)
+- Real time clock (SPI) with supercap backup (Vbat)
 - EEPROM (SPI)
 - SDRAM (multiplexed address and data bus)
 - 20-pin FFC 0.5 mm socket for Riverdi LCD TFT displays (SPI, Audio out)
