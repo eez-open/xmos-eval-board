@@ -1,0 +1,22 @@
+Circuit: * Z:\media\denis\SSD_256GB\BACKUP\EEZ\git-public\xmos-eval-board\Simulation\Flash startup2.asc
+
+WARNING: Less than two connections to node MUX_S.  This node is used by A2.
+Direct Newton iteration for .op point succeeded.
+
+Date: Tue Feb 20 16:38:13 2018
+Total elapsed time: 0.351 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 28334
+traniter = 28331
+tranpoints = 14165
+accept = 12488
+rejected = 1677
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1: 142 bytes object code size  0.3/0.3/[0.3]
+Matrix Compiler2: 319 bytes object code size  0.3/0.3/[0.3]
+

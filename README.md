@@ -1,5 +1,3 @@
-[![license](https://img.shields.io/github/license/eez-open/xmos-eval-board.svg)](https://github.com/eez-open/xmos-eval-board/blob/master/LICENSE.TXT)
-
 ### Ownership and License
 
 The contributors are listed in CONTRIB.TXT. This project uses the TAPR v1.0 license, see LICENSE.TXT.
@@ -8,7 +6,7 @@ To report an issue, use the [issue tracker](https://github.com/eez-open/xmos-eva
 
 ### Overview
 
-![PCB preview](EEZ_XMOS_eval_preview.png)
+![PCB r1B4 assembled](XMOS_eval_board_r1B4.jpg)
 
 This project is an attempt to learn more about [XMOS xCORE-200](http://www.xmos.com/products/silicon/xcore-200) multicore microcontroller XE216-512-TQ128 by making evaluation board that would be used as a prototype or building block in some future DIY open source Test & Measurement (T&M) projects.
 Selected MCU has 16 _logical_ cores divided between two hardware cores (_tiles_)and include USB 2.0 and [RGMII](https://en.wikipedia.org/wiki/Media-independent_interface) for Gigabit Ethernet. It has the highest pin count that comes in easy to mounting package (not BGA).

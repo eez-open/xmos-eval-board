@@ -1,0 +1,1 @@
+[LTspice](http://www.linear.com/designtools/software/) simulation of how MUX signal for IC11, IC14 is related to #RESET and firmware controlled LATCH signal.
