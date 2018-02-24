@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17547,6 +17547,124 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jump-0r-smd">
+<description>Soldering jumper and bridges</description>
+<packages>
+<package name="A0R-JMP">
+<description>&lt;b&gt;0R Jumper Variant A&lt;/b&gt;&lt;p&gt;
+chip 0805</description>
+<wire x1="0.635" y1="1.26" x2="0.635" y2="0.44" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="1.26" x2="-0.635" y2="0.44" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3235" y1="-0.5814" x2="0.3265" y2="0.8186" layer="51" rot="R270"/>
+<rectangle x1="-0.3235" y1="0.8918" x2="0.3265" y2="2.2918" layer="51" rot="R270"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="B0R-JMP">
+<description>&lt;b&gt;0R Jumper Variant B&lt;/b&gt;&lt;p&gt;
+chip 0805</description>
+<wire x1="-0.635" y1="-0.44" x2="-0.635" y2="-1.26" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-1.26" x2="0.635" y2="-0.44" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="2" x="0" y="0" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<smd name="3" x="0" y="-1.7" dx="1.3" dy="1.5" layer="1" rot="R270"/>
+<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3235" y1="-2.2814" x2="0.3265" y2="-0.8814" layer="51" rot="R270"/>
+<rectangle x1="-0.3235" y1="-0.8082" x2="0.3265" y2="0.5918" layer="51" rot="R270"/>
+</package>
+<package name="C0R-JMP">
+<description>&lt;b&gt;0R Jumper Variant C&lt;/b&gt;&lt;p&gt;
+Solder type</description>
+<wire x1="0.61" y1="0.66" x2="0.61" y2="0.34" width="0.1524" layer="51"/>
+<wire x1="-0.61" y1="0.66" x2="-0.61" y2="0.34" width="0.1524" layer="51"/>
+<smd name="1" x="0" y="0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
+<smd name="2" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="50"/>
+<smd name="3" x="0" y="-0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
+<text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.3235" y1="-0.6814" x2="0.3265" y2="0.7186" layer="51" rot="R270"/>
+<rectangle x1="-0.3235" y1="0.2338" x2="0.3265" y2="1.6338" layer="51" rot="R270"/>
+</package>
+</packages>
+<symbols>
+<symbol name="0RJM">
+<wire x1="0" y1="2.54" x2="0" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="1.524" x2="0.254" y2="1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.254" y1="-1.016" x2="0.254" y2="-1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="1.016" x2="-0.254" y2="1.016" width="0.508" layer="94" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="-1.524" x2="-0.254" y2="-1.524" width="0.508" layer="94" curve="-180" cap="flat"/>
+<text x="2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
+<pin name="3" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="JMP">
+<wire x1="0.762" y1="-0.254" x2="0.508" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.254" y1="-0.254" x2="-0.254" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.508" y1="-0.254" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-2.286" x2="0.508" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.254" y1="-2.286" x2="-0.254" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.508" y1="-2.286" x2="-0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-0.254" x2="0.762" y2="-0.508" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-1.016" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-1.524" x2="0.762" y2="-1.778" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="0.762" y1="-2.032" x2="0.762" y2="-2.286" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-2.286" x2="-0.762" y2="-2.032" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-1.524" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="-0.762" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.254" width="0.1524" layer="94" style="shortdash"/>
+<rectangle x1="-0.508" y1="-2.032" x2="0.508" y2="-0.508" layer="94" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="0R-JUMP" prefix="JMP">
+<description>&lt;b&gt;SMD 0R 0805 Jumper&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="-0R" symbol="0RJM" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="JMP" x="-2.54" y="2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="A" package="A0R-JMP">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="B0R-JMP">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C" package="C0R-JMP">
+<connects>
+<connect gate="-0R" pin="1" pad="1"/>
+<connect gate="-0R" pin="2" pad="2"/>
+<connect gate="-0R" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17643,7 +17761,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="+3V36" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V37" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="ZD1" library="EEZ_Lib1" deviceset="ZENER-DIODE" device="SOD323" value="BZX384-B30.115"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="SUPPLY67" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="+3V38" library="supply1" deviceset="+3V3" device=""/>
@@ -18001,6 +18118,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="IC29" library="EEZ_Lib1" deviceset="AT25XXX" device="SOIC8" value="M95256-WMN6P"/>
 <part name="Q1" library="EEZ_Lib1" deviceset="IRLML2246TRPBF" device=""/>
 <part name="+3V52" library="supply1" deviceset="+3V3" device=""/>
+<part name="C82" library="rcl" deviceset="C-EU" device="C0805" value="2u2"/>
+<part name="JP1" library="jump-0r-smd" deviceset="0R-JUMP" device="A"/>
 </parts>
 <sheets>
 <sheet>
@@ -18009,7 +18128,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="2.54" y="2.54" size="1.778" layer="94">Repository: https://github.com/eez-open</text>
 <text x="2.54" y="5.08" size="1.778" layer="94">More info at http://www.envox.hr/eez</text>
 <text x="164.465" y="26.035" size="2.54" layer="94" font="vector">Sequenced power supplies +3.3V and +1V</text>
-<text x="43.18" y="132.08" size="1.778" layer="97">4.3" LCD 40-pin socket and resistive touchscreen controller</text>
+<text x="44.45" y="133.985" size="1.778" layer="97">4.3" LCD 40-pin socket and resistive touchscreen controller</text>
 <text x="43.18" y="175.26" size="1.778" layer="97">LCD backlight DC-DC step-up converter</text>
 <text x="164.465" y="31.115" size="2.54" layer="94" font="vector">WLED boost, TFT display with touchscreen</text>
 <wire x1="116.84" y1="177.8" x2="116.84" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
@@ -18023,7 +18142,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="160.02" y="88.9" size="1.778" layer="97">+1V DC-DC step-down converter with sequencer</text>
 <text x="0" y="180.975" size="1.778" layer="100">W O R K I N G   D R A F T</text>
 <text x="38.735" y="12.7" size="1.27" layer="103">Consumption: +3.3 V, Typ. 17 mA</text>
-<text x="13.97" y="57.15" size="1.27" layer="103">Consumption: +3.3 V, max. 33 mA; +32 V, 20 mA</text>
+<text x="16.51" y="57.15" size="1.27" layer="103">Consumption: +3.3 V, max. 33 mA; +32 V, 20 mA</text>
 <wire x1="157.48" y1="137.16" x2="157.48" y2="93.98" width="0.1524" layer="97" style="shortdash"/>
 <text x="158.115" y="172.085" size="1.27" layer="103" align="center">+1V</text>
 <text x="167.005" y="172.085" size="1.27" layer="103" align="center">+3.3V</text>
@@ -18107,15 +18226,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <text x="218.44" y="114.935" size="1.27" layer="103" rot="MR0">Vfb = 0.768 V</text>
 <text x="210.82" y="74.295" size="1.27" layer="103" rot="MR0">Vfb = 0.768 V</text>
 <text x="53.34" y="153.035" size="1.27" layer="103" rot="MR0">Vfb = 0.204 V</text>
-<rectangle x1="22.225" y1="157.48" x2="27.94" y2="166.37" layer="97"/>
 <text x="239.395" y="46.99" size="1.27" layer="103">t(delay) = 1.2 ms</text>
 <text x="123.19" y="143.51" size="1.27" layer="103">Riverdi 3.5" LCD (optional)</text>
 <text x="167.005" y="143.51" size="1.27" layer="103" align="center">257 mA</text>
 <text x="158.115" y="143.51" size="1.27" layer="103" align="center">-</text>
 <text x="175.895" y="143.51" size="1.27" layer="103" align="center">-</text>
 <rectangle x1="241.3" y1="156.21" x2="246.38" y2="163.83" layer="97"/>
-<text x="13.97" y="60.96" size="1.27" layer="103">LCD display: RFE43BH-AIW-DNS</text>
-<text x="13.97" y="59.055" size="1.27" layer="103">4.3", 480x272, resistive touch screen</text>
+<text x="16.51" y="60.96" size="1.27" layer="103">LCD display: RFE43BH-AIW-DNS or RFE430Y-AIW-DNS</text>
+<text x="16.51" y="59.055" size="1.27" layer="103">4.3", 480x272, resistive touch screen</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -18264,8 +18382,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="38.735" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="LCD1" gate="G$1" x="48.26" y="96.52" smashed="yes" rot="MR0">
-<attribute name="NAME" x="51.0794" y="127.8636" size="1.778" layer="95" ratio="6" rot="SMR0"/>
-<attribute name="VALUE" x="44.1706" y="62.6364" size="1.778" layer="96" ratio="6" rot="SMR180"/>
+<attribute name="NAME" x="37.8206" y="131.8514" size="1.778" layer="95" ratio="6" rot="SMR180"/>
+<attribute name="VALUE" x="37.8206" y="129.3114" size="1.778" layer="96" ratio="6" rot="SMR180"/>
 </instance>
 <instance part="SUPPLY5" gate="GND" x="27.94" y="15.24" smashed="yes">
 <attribute name="VALUE" x="28.956" y="12.7" size="1.778" layer="96"/>
@@ -18300,10 +18418,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="72.771" y="39.37" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY8" gate="GND" x="30.48" y="101.6" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="28.829" y="100.33" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="28.829" y="102.87" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="+3V4" gate="G$1" x="30.48" y="114.3" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="31.115" y="115.57" size="1.778" layer="96" rot="MR0"/>
+<instance part="+3V4" gate="G$1" x="25.4" y="119.38" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="22.225" y="121.92" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="D1" gate="G$1" x="45.72" y="170.18" smashed="yes" rot="MR0">
 <attribute name="NAME" x="44.069" y="172.085" size="1.778" layer="95"/>
@@ -18355,10 +18473,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="+3V1" gate="G$1" x="200.66" y="60.96" smashed="yes" rot="R90">
 <attribute name="VALUE" x="200.025" y="61.595" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="ZD1" gate="G$1" x="25.4" y="162.56" smashed="yes" rot="MR90">
-<attribute name="NAME" x="22.733" y="162.56" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="22.733" y="160.401" size="1.778" layer="96" rot="MR0"/>
-</instance>
 <instance part="C11" gate="G$1" x="241.3" y="55.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="240.919" y="56.261" size="1.778" layer="95"/>
 <attribute name="VALUE" x="240.919" y="53.721" size="1.778" layer="96"/>
@@ -18366,12 +18480,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="SUPPLY67" gate="GND" x="246.38" y="53.34" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="244.729" y="53.34" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V38" gate="G$1" x="12.7" y="109.22" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="9.525" y="111.76" size="1.778" layer="96" rot="MR180"/>
+<instance part="+3V38" gate="G$1" x="7.62" y="109.22" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="4.445" y="111.76" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R7" gate="G$1" x="12.7" y="99.06" smashed="yes" rot="MR90">
-<attribute name="NAME" x="11.43" y="99.949" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="11.43" y="97.409" size="1.778" layer="96" rot="MR0"/>
+<instance part="R7" gate="G$1" x="7.62" y="99.06" smashed="yes" rot="MR90">
+<attribute name="NAME" x="6.35" y="99.949" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="6.35" y="97.409" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY46" gate="GND" x="73.66" y="121.92" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="75.311" y="120.65" size="1.778" layer="96"/>
@@ -18417,6 +18531,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="Q1" gate="A" x="233.68" y="162.56" smashed="yes" rot="MR90">
 <attribute name="NAME" x="231.14" y="169.545" size="1.778" layer="95"/>
 <attribute name="VALUE" x="231.14" y="167.64" size="1.4224" layer="96"/>
+</instance>
+<instance part="C82" gate="G$1" x="27.94" y="111.76" smashed="yes">
+<attribute name="NAME" x="25.781" y="110.871" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="25.781" y="108.966" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="JP1" gate="-0R" x="17.78" y="101.6" smashed="yes" rot="MR180">
+<attribute name="NAME" x="17.145" y="104.775" size="1.778" layer="95" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -18480,8 +18601,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="LCD1" gate="G$1" pin="VDD"/>
-<wire x1="35.56" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<pinref part="C82" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
+<junction x="27.94" y="114.3"/>
+<wire x1="25.4" y1="114.3" x2="25.4" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V20" gate="G$1" pin="+3V3"/>
@@ -18512,7 +18637,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="+3V38" gate="G$1" pin="+3V3"/>
-<wire x1="12.7" y1="106.68" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="106.68" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
@@ -18644,6 +18769,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <wire x1="30.48" y1="104.14" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
 <junction x="30.48" y="106.68"/>
+<pinref part="C82" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="-0R" pin="3"/>
+<wire x1="27.94" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="106.68" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
+<junction x="27.94" y="106.68"/>
 </segment>
 <segment>
 <wire x1="132.08" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
@@ -18870,7 +19001,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <segment>
 <wire x1="40.64" y1="170.18" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="170.18" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="170.18" x2="40.64" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="43.18" y1="170.18" x2="40.64" y2="170.18" width="0.1524" layer="91"/>
@@ -18878,10 +19008,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="LCD1" gate="G$1" pin="VLED+"/>
 <wire x1="35.56" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
 <label x="33.02" y="170.815" size="1.27" layer="102"/>
-<pinref part="ZD1" gate="G$1" pin="C"/>
-<wire x1="25.4" y1="165.1" x2="25.4" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="119.38" x2="30.48" y2="170.18" width="0.1524" layer="91"/>
-<junction x="30.48" y="170.18"/>
 </segment>
 </net>
 <net name="VLED-" class="0">
@@ -18895,10 +19022,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="35.56" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <label x="33.02" y="153.035" size="1.27" layer="102"/>
 <wire x1="33.02" y1="152.4" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="ZD1" gate="G$1" pin="A"/>
-<wire x1="33.02" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="152.4" x2="25.4" y2="160.02" width="0.1524" layer="91"/>
-<junction x="33.02" y="152.4"/>
 </segment>
 </net>
 <net name="X0D11/LCD_BR" class="0">
@@ -18984,22 +19107,22 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="LCD_CLK" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="CLK"/>
-<wire x1="35.56" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
-<label x="17.78" y="94.615" size="1.27" layer="102"/>
+<wire x1="35.56" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
+<label x="10.16" y="94.615" size="1.27" layer="102"/>
 </segment>
 </net>
 <net name="LCD_HSYNC" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="HSYNC"/>
-<wire x1="35.56" y1="88.9" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
-<label x="17.78" y="89.535" size="1.27" layer="102"/>
+<wire x1="35.56" y1="88.9" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
+<label x="10.16" y="89.535" size="1.27" layer="102"/>
 </segment>
 </net>
 <net name="LCD_VSYNC" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="VSYNC"/>
-<wire x1="35.56" y1="86.36" x2="17.78" y2="86.36" width="0.1524" layer="91"/>
-<label x="17.78" y="86.995" size="1.27" layer="102"/>
+<wire x1="35.56" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="10.16" y="86.995" size="1.27" layer="102"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -19013,24 +19136,25 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="!RESET" class="0">
 <segment>
-<pinref part="LCD1" gate="G$1" pin="RESET"/>
-<wire x1="35.56" y1="96.52" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
-<label x="17.78" y="97.155" size="1.27" layer="102"/>
+<label x="10.16" y="97.155" size="1.27" layer="102"/>
+<wire x1="17.78" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="-0R" pin="1"/>
+<wire x1="17.78" y1="96.52" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_DE" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="DE/NC2"/>
-<wire x1="35.56" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
-<label x="17.78" y="84.455" size="1.27" layer="102"/>
+<wire x1="35.56" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
+<label x="10.16" y="84.455" size="1.27" layer="102"/>
 </segment>
 </net>
 <net name="N$79" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="DISP"/>
-<wire x1="35.56" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="91.44" x2="7.62" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="91.44" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="91.44" x2="7.62" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_0" class="0">
@@ -19350,6 +19474,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="236.22" y="154.94"/>
 <wire x1="243.84" y1="154.94" x2="243.84" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="A" pin="G"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="LCD1" gate="G$1" pin="RESET"/>
+<wire x1="35.56" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="-0R" pin="2"/>
+<wire x1="20.32" y1="101.6" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="101.6" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
