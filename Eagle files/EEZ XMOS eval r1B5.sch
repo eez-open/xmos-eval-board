@@ -17793,7 +17793,7 @@ Solder type</description>
 <part name="SUPPLY80" library="supply2" deviceset="GND" device="" value="PGND"/>
 <part name="SW1" library="EEZ_Lib1" deviceset="TACT_SW" device="" value="1301.9316"/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
-<part name="IC13" library="EEZ_Lib1" deviceset="AT25SFXXX" device="" value="AT25SF041-SSHDT"/>
+<part name="IC13" library="EEZ_Lib1" deviceset="AT25SFXXX" device="" value="AT25SF081-SSHDT"/>
 <part name="IC12" library="EEZ_Lib1" deviceset="SN74LVC1G02DBVR" device=""/>
 <part name="IC10" library="EEZ_Lib1" deviceset="IS42S16400" device="" value="IS42S16400J"/>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>

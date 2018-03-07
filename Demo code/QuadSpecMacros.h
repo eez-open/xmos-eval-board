@@ -183,11 +183,11 @@
     0x01,                   /* QSPI_WRSR (Write Status Register command)*/ \
     0x01,                   /* QSPI_WIP_BIT_MASK */ \
 }
-#define FL_QUADDEVICE_ADESTO_AT25SF041 \
+#define FL_QUADDEVICE_ADESTO_AT25SF081 \
 { \
-    ADESTO_AT25SF041,       /* AT25SF041-SSHDT */ \
+    ADESTO_AT25SF081,       /* AT25SF081-SSHDT */ \
     256,                    /* page size */ \
-    2048,                   /* num pages */ \
+    4096,                   /* num pages */ \
     3,                      /* address size */                                   \
     3,                      /* log2 clock divider, 16.6MHz from a 100MHz reference clock, i.e. 100 / (2*3) */                             \
     0x9F,                   /* QSPI_RDID, Section 11.1*/ \
