@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18120,6 +18120,7 @@ Solder type</description>
 <part name="+3V52" library="supply1" deviceset="+3V3" device=""/>
 <part name="C82" library="rcl" deviceset="C-EU" device="C0805" value="2u2"/>
 <part name="JP1" library="jump-0r-smd" deviceset="0R-JUMP" device="A"/>
+<part name="+3V53" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -22687,6 +22688,9 @@ Solder type</description>
 <attribute name="NAME" x="43.18" y="31.8516" size="1.778" layer="95"/>
 <attribute name="VALUE" x="39.37" y="27.559" size="1.4224" layer="96"/>
 </instance>
+<instance part="+3V53" gate="G$1" x="142.24" y="35.56" smashed="yes" rot="R180">
+<attribute name="VALUE" x="145.415" y="34.925" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22785,14 +22789,6 @@ Solder type</description>
 <pinref part="C72" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="43.18" x2="180.34" y2="40.64" width="0.1524" layer="91"/>
 <junction x="180.34" y="40.64"/>
-<pinref part="R52" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="40.64" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
-<junction x="149.86" y="40.64"/>
-<pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="40.64" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
-<junction x="142.24" y="40.64"/>
 <wire x1="160.02" y1="43.18" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="160.02" y="40.64"/>
 </segment>
@@ -22917,6 +22913,16 @@ Solder type</description>
 <wire x1="99.06" y1="127" x2="101.6" y2="127" width="0.1524" layer="91"/>
 <pinref part="+3V47" gate="G$1" pin="+3V3"/>
 <wire x1="101.6" y1="127" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R51" gate="G$1" pin="1"/>
+<pinref part="R52" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="40.64" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="40.64" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="+3V53" gate="G$1" pin="+3V3"/>
+<wire x1="142.24" y1="38.1" x2="142.24" y2="40.64" width="0.1524" layer="91"/>
+<junction x="142.24" y="40.64"/>
 </segment>
 </net>
 <net name="AUDIO_OUT" class="0">
